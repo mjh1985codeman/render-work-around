@@ -18,4 +18,4 @@ async function hitTheAPI() {
 };
 
 
-hitTheAPI();
+setInterval(hitTheAPI, 840000);
