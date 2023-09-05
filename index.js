@@ -6,16 +6,14 @@ function establishGetCount(apiHit) {
     if(apiHit) {
         count++
     };
+    countDiv.innerHTML(`Check this count: ${count}`);
     return count;
 };
 
 async function hitTheAPI() {
-   const hit = await fetch('https://gql-api-timber-properties.onrender.com/')
+   await fetch('https://gql-api-timber-properties.onrender.com/')
    .then(res => {
-    console.log('do you see me? ');
-    res.json()
-   }).then(json => {
-    console.log('json: ' , json);
+    establishGetCount(res);
    });
 };
 
