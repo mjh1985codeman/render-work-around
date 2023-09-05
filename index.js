@@ -1,8 +1,7 @@
 const countDiv = document.getElementById('count-thing');
 
-
+let count = 0;
 function establishGetCount(apiHit) {
-    let count = 0;
     if(apiHit) {
         count++
     };
