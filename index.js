@@ -10,8 +10,8 @@ function establishGetCount(apiHit) {
 };
 
 async function hitTheAPI() {
-   const hit = await fetch('https://gql-api-timber-properties.onrender.com/');
-   hit.then(res => {
+   const hit = await fetch('https://gql-api-timber-properties.onrender.com/')
+   .then(res => {
     console.log('do you see me? ');
     res.json()
    }).then(json => {
