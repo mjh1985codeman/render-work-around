@@ -6,7 +6,7 @@ function establishGetCount(apiHit) {
     if(apiHit) {
         count++
     };
-    countDiv.innerHTML(`Check this count: ${count}`);
+    countDiv.textContent =`Check this count: ${count}`;
     return count;
 };
 
